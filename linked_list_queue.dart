@@ -13,6 +13,11 @@ class LinkedListQueue {
 
   // Linear time operation: 0(n)
   int? dequeue() {
-    return _data.removeFirst(0);
+    return _data.removeFirst();
+  }
+
+  @override
+  String toString() {
+    return _data.toString();
   }
 }
